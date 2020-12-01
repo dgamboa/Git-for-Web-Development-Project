@@ -19,6 +19,10 @@ h1 {
   text-align: center;
 }
 
+h1:hover {
+  color: #BC8F8F;
+}
+
 h2 {
   font-size: 1.5em;
   font-weight: bold;
@@ -30,6 +34,10 @@ h2 {
   padding: 5%;
 }
 
+.intro:hover {
+  background-color: #DEB887;
+}
+
 .description {
   background-color: #2F4F4F;
   color: #00CED1;
@@ -37,9 +45,18 @@ h2 {
   padding: 10%;
 }
 
+.description:hover {
+  color: #FFA07A;
+  background-color: #696969;
+}
+
 .another {
   line-height: 1.5;
   letter-spacing: 2px;
+}
+
+.another:hover {
+  color: #FF8C00;
 }
 
 .another h2 {
@@ -47,12 +64,17 @@ h2 {
   text-transform: uppercase;
 }
 
+.another h2:hover {
+  color: #FF8C00;
+  text-transform: capitalize;
+}
+
 .four-pictures {
   display: flex;
   justify-content: space-between;
-  margin: 100px 0; 
+  margin: 10% 0; 
 }
 
 .four-pictures img:hover {
-  border: dotted 10px black;
+  border: dotted 10px #DC143C;
 }
