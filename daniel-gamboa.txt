@@ -139,7 +139,20 @@ Questions & Answers:
 Stretch Questions
 
   1. What is the difference between an inline element and a block element?
+  Block elements have their own line in HTML whereas inline elements are structured on the same line as the preceding element. Inline elements don't break the flow of the content around them.
+
   2. What happens when an element is positioned absolutely? 
-  3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-  4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+  An element positioned absolutely will be positioned relative to the parent element using a combination of distances specified by top, bottom, right and/or left attributes. These are referenced as "distance from" values with the origin being the top left corner of the parent element.
+
+  3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+  This question probably needs a bit more clarification since it seems a bit broad (or perhaps I'm not fully understanding the context, which may well be the case). Elements tend to take only the amount of space it needs but we can make them wider with the "width" property if necessary.
+
+  4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+  - Block: h1, p, div.
+  - Inline: span, a.
+  - Inline-Block: img.
+
   5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+  The box model is the representation of HTML elements in a document according spacing characteristics. It consist of margin, border and padding, in that order from the outside in, surrounding the content. CSS can be used to specify those characteristics to achieve the desired layout for an element. It is called a box model because the three layers surrounding the content can be said to "box" it. The padding boxes the content; the border boxes the content+padding; and the margin boxes the content+padding+border.
+
+  An element's width can be "fixed" by using the property `box-sizing: border-box`. This ensures that the element retains the explicit width and works inward to layer any padding and border. That is, the total element's width goes from given width + padding + border to given width. This means the content's width will be shrunk to given width - padding - border.
