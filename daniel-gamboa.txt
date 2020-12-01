@@ -1,1 +1,10 @@
-This should contain the link to your completed codepen from part 2 as well as the review questions/answers
+Unit 1.2: HTML, CSS and Git
+Module 2 Project
+
+Completed Codepen:
+https://codepen.io/dgamboa/pen/YzGXbbE
+
+Referenced Codepen:
+https://codepen.io/BritHemming/full/jONmxOm
+
+Questions & Answers:
