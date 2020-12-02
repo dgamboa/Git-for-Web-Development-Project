@@ -1,0 +1,158 @@
+Unit 1.2: HTML, CSS and Git
+Module 2 Project
+
+Completed Codepen:
+https://codepen.io/dgamboa/pen/YzGXbbE
+
+Referenced Codepen:
+https://codepen.io/BritHemming/full/jONmxOm
+
+Questions & Answers:
+  1. What is Semantic HTML?
+  HTML where element tags have context that give meaning to their content (e.g. using the nav tag to wrap the navigation on a web page).
+
+  2. What is HTML used for?
+  Structuring content for web pages to be styled with CSS.
+
+  3. What is an attribute and where do we put it? 
+  An attribute informs an element's behavior and it goes inside the opening tag of that element.
+
+  4. What is the h1 tag used for? How many times should I use it on a page?
+  The h1 tag is for the main title of a page and should only be used one.
+
+  5. Name two tags that have required attributes
+  Anchor tags require the href attribute, which informs the location of the linked content.
+  Image tags require the src attribute, which informs the location of the displayed image.
+
+  6. What do we put in the head of our HTML document? 
+  The head of the HTML document includes meta data like character set; links to complementary files like CSS stylesheets and JavaScript functions; and a page title.
+
+  7. What is an id?
+  A unique identifier for elements in an HTML document.
+
+  8. What elements can I add an id to?
+  Any element in an HTML document as long as the id is only used in one element.
+
+  9. How many times can I use the same id on a page? 
+  One time.
+
+  10. What is a class? 
+  A more general identifier for elements in an HTML document.
+
+  11. What elements can I add a class to? 
+  Any element.
+
+  12. How many times can I use the same class on a page? 
+  Unlimited.
+
+  13. How do I get my link to open in a new tab?
+  By setting the target attribute in the anchor tag to "_blank".
+
+  14. What is the alt attribute in the image tag used for?
+  The alt attribute includes a string that describes the image. It is used for screen readers and search engine optimization.
+
+  15. How do I reference an id?
+  Id's are referenced with a #<id-name> (e.g. for the id "foo", the selector would be #foo).
+
+  16. What is the difference between a section and a div
+  While they both denote a block of content in an HTML document, the section tag is a semantic element.
+
+  17. What is CSS used for? 
+  CSS is used for styling HTML content.
+
+  18. How do we select an element? Example - every h2 on the page
+  By referencing the h2 tag (e.g.
+                              h2 { /* CSS in here */ }
+                            ).
+
+  19. What is the difference between a class and an id? - Give me an example of when I might use each one
+  The difference is that id's are unique and classes can be used multiple times. One might use a class when there are multiple elements that share styling on a page. One might use an id when an element needs to be specifically targeted like a user profile image or a delete link.
+
+  20. How do we select classes in CSS?
+  Classes are selected using a period followed by the class name (e.g. for the class "bar", the selector would be .bar)
+
+  21. How do we select a p element with a single class of “human””?
+  A p element with a single class of "human" can be selected by:
+    p.human { /* CSS in here */ }.
+
+  22. What is a parent child selector? When would this be useful? 
+  A parent child selector is one that uses parent-child relationships as selection context. For example, if one wants to select a p tag but only if it is immediately inside a div tag, one can use the div > p selector syntax. This is useful for added specificity as the same tag might be used several times in a page but for different purposes (i.e. in different styles).
+
+  23. How do you select all links within a div with the class of sidebar?
+  div.sidebar a { /* CSS in here */ }
+
+  24. What is a pseudo selector?
+  A pseudo selector is one precedent by a colon and is used to select specific element states. For example, the :hover pseudo selector allows for styling of an element when the pointer hovers over it.
+
+  25. What do we use the change the spacing between lines?
+  Line-height.
+
+  26. What do we use to change the spacing between letters?
+  Letter-spacing.
+
+  27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+  28. How do I add a 1px border around my div that is dotted and black?
+  div {
+    border: dotted 1px black;
+  }
+
+  29. How do I select everything on the page? 
+  * { /* CSS in here */ }
+
+  30. How do I write a comment in CSS?
+  /* Comment in here */
+
+  31. How do I find out what file I am in, when I am using the command line? 
+  Type the command `pwd` into the CLI (it stands for print working directory).
+
+  32. Using the command line - how do I see a list of files/folders in my current folder?
+  Type the command `ls` into the CLI.
+
+  33. How do I remove a file via the command line? Why do I have to be careful with this?
+  Type the command `rm <filename>`. One should be careful because once deleted with the `rm` command, the file is irretrievable.
+  
+  34. Why should I use version control? 
+  Version control makes managing document versions easier (making revisions, reverting to previous versions, tracking changes over time). It also makes collaboration easier by allowing multiple people working on the same project to contribute and integrate modules independently while reassuring the team that a working copy is available should any individual's changes fail to integrate properly.
+
+  35. How often should I commit to github?
+  Early and often. More specifically, after every block change that can be individually described.
+
+  36. What is the command we would use to push our repo up to github? 
+  $ git push  # general command
+  $ git push origin firstName-lastName  # Lambda workflow command
+
+  37. Walk me through Lambda's git flow.
+    1) Fork the repo on GitHub
+    2) Clone the repo locally with `git clone <HTTPS-link-from-GitHub>` 
+    3) Create a branch labeled firstName-lastName with `git checkout -b firstName-lastName`
+    4) Stage changes with `git add .`
+    5) Commit changes with `git commit -m "Add descriptive message"`
+    6) Push changes with `git push origin firstName-lastName`
+    7) On GitHub submit a pull request using the appropriate base repo
+    8) For projects, submit the link to the pull request (i.e. don't merge the pull request)
+
+
+Stretch Questions
+
+  1. What is the difference between an inline element and a block element?
+  Block elements have their own line in HTML whereas inline elements are structured on the same line as the preceding element. Inline elements don't break the flow of the content around them.
+
+  2. What happens when an element is positioned absolutely? 
+  An element positioned absolutely will be positioned relative to the parent element using a combination of distances specified by top, bottom, right and/or left attributes. These are referenced as "distance from" values with the origin being the top left corner of the parent element.
+
+  3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+  This question probably needs a bit more clarification since it seems a bit broad (or perhaps I'm not fully understanding the context, which may well be the case). Elements tend to take only the amount of space it needs but we can make them wider with the "width" property if necessary.
+
+  4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+  - Block: h1, p, div.
+  - Inline: span, a.
+  - Inline-Block: img.
+
+  5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+  The box model is the representation of HTML elements in a document according spacing characteristics. It consist of margin, border and padding, in that order from the outside in, surrounding the content. CSS can be used to specify those characteristics to achieve the desired layout for an element. It is called a box model because the three layers surrounding the content can be said to "box" it. The padding boxes the content; the border boxes the content+padding; and the margin boxes the content+padding+border.
+
+  An element's width can be "fixed" by using the property `box-sizing: border-box`. This ensures that the element retains the explicit width and works inward to layer any padding and border. That is, the total element's width goes from given width + padding + border to given width. This means the content's width will be shrunk to given width - padding - border.
